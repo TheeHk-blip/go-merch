@@ -9,17 +9,17 @@ body {
 }
 
 .navbar{
-  background-color:azure;
+  background-color: floralwhite;
   padding: 12px;
   align-items: center;
   margin-bottom: 4px;
   border-bottom:1px solid grey;
   box-shadow: 0px 0px 4px black;
-
 }
 a{
   margin-right: 6px;
   padding: 5px;
+  margin-inline-start:45px;
 }
 .image{
   display: block;
@@ -39,4 +39,7 @@ a{
   border-top: 1px solid gray;
   padding: 4px;
   background-color: floralwhite;
+}
+.van{
+  margin-inline-end: auto;
 }

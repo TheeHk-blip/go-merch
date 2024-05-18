@@ -6,9 +6,8 @@ export default function App(){
     return(
     <><div className="stick">
         <div className="top">
-    <Image src="/z-merch-transparent.png" width="200" height="0"  alt={''} className='image'/>
-    </div>
-
+            <Image src="/go-merch.png" alt={''} width="250" height="0"></Image>
+        </div>
         
         <Navbar>
             <ul>

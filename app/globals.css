@@ -13,7 +13,8 @@ body {
   padding: 12px;
   align-items: center;
   margin-bottom: 4px;
-  border-top:1px solid grey;
+  border-bottom:1px solid grey;
+  box-shadow: 0px 0px 4px black;
 
 }
 a{
@@ -33,4 +34,8 @@ a{
 }
 .top{
   background-color:floralwhite;
+}
+.nav{
+  border-top: 1px solid gray;
+  padding: 4px;
 }

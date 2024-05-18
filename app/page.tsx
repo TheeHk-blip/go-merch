@@ -1,15 +1,13 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import { Navbar } from 'react-bootstrap'
 
 export default function App(){
     return(
     <><div className="stick">
         <div className="top">
-            <Image src="/go-merch.png" alt={''} width="250" height="0"></Image>
+            <Image src="/go-merch.png" alt={''} width="200" height="0" className="image"></Image>
         </div>
-        
-        <Navbar>
+        <div className="nav">
             <ul>
             <li>
             <Link href="/">Home</Link>
@@ -17,12 +15,12 @@ export default function App(){
             <Link href="/about">About</Link>
             </li>
             </ul>
-        </Navbar>
+        </div>
         </div>
         <div>
             
             <h1 className="text-xl">Who Are We?</h1>
-            <p>Z-merch is an e-commerce website that integrates a store and a home section where we provide you with latest trends in fashion and events revolving around it.</p><br/>
+            <p>Go-merch is an e-commerce website that integrates a store and a home section where we provide you with latest trends in fashion and events revolving around it.</p><br/>
             <section>
             In this week&apos;s feed we&apos;ll talk about the <b>Met Gala 2024.</b><br/>
             The Met Gala is a black tie extravaganza held the first Monday of May to raise money for the Metropolitan Museum of Art Costume Institute fashion wing. Celebrities always make their presence felt through their on-theme outfits. Some outfits are good and others are wierd.<br/>

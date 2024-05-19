@@ -20,13 +20,13 @@
     {
         "id":4,
         "name":"Hoodie",
-        "imgUrl":"hoodie.jpeg",
+        "imgUrl":"./hoodie.jpeg",
         "price":39.99
     },
     {
         "id":5,
-        "name":"Exclusive wear",
-        "imgUrl":"exclusive.png",
+        "name":"Exclusive",
+        "imgUrl":"./exclusive.png",
         "price":178.99
 
     }

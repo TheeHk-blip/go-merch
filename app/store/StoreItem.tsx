@@ -1,5 +1,6 @@
-import { Button, CardBody, CardImg, CardTitle } from 'react-bootstrap'
-import Card from 'react-bootstrap/esm/Card'
+import Button from '@mui/material/Button'
+import { Card, CardBody, CardFooter, Image } from '@nextui-org/react'
+import Row from 'react-bootstrap/esm/Row'
 import { formatCurrency } from '../utilities/formatCurrency'
 
 type StoreItemProps={
@@ -10,20 +11,29 @@ type StoreItemProps={
 }
 
 export function StoreItem({id, name, imgUrl, price}:StoreItemProps){
-    const quantity = 1
     return(
-        <Card className="card">
-            <CardBody>
-                <CardImg src={imgUrl} className="img"/>
-                <CardTitle className="ctitle">
-                    <span>{name}</span>
-                    <span>{formatCurrency(price)}</span>
-                </CardTitle>
-                <div>
-                    {quantity === 1?(
-                        <Button>+Add To Cart</Button>):null}
-                </div>
-            </CardBody>
-        </Card>
+    <>
+    <Card className="column" style={{position:"inherit"}}>
+        
+    <CardBody className="d-flex flex-column py-2">
+        <Image
+            alt=""
+            className="img"
+            src={imgUrl}
+            width={200}
+        />
+        <CardFooter className="footer">
+            <Row gp-3>
+            <span className="text-xl">{name}</span>
+            <span className="float-right text-base">{formatCurrency(price)}</span>
+            </Row>
+            <div className="d-flex align-items-center flex-row">
+            <Button className="button" variant='contained' disableRipple={true}>+Add To Cart</Button>
+            </div>
+            
+        </CardFooter>
+    </CardBody>
+    </Card>
+    </>
     )
 }

@@ -4,21 +4,25 @@ import Link from 'next/link';
 import { Col, Navbar, Row } from 'react-bootstrap';
 import StoreItems from '../data/items.json';
 import { StoreItem } from './StoreItem';
+import './store.css';
+
 export default function Store(){
   return(
   <>
-  <Navbar className="navbar" >
+  <div className="static">
+  <Navbar>
     <Link href="/">Home</Link>
     <Link href="/store">Store</Link>
     <Link href="/about">About</Link>
-    <Button variant="outlined" style={{marginLeft:"200px"}}>
+    <Button className="float-right ,my-2" variant="outlined">
     <ShoppingCartIcon/>
     <div>2</div>
     </Button>
   </Navbar>
-      <Row  md={2} lg={3} xl={4} className="g-3">
+  </div>
+      <Row className="g-3">
         {StoreItems.map(item=>(
-          <Col key={item.id}>
+          <Col key={item.id} className="col">
             <StoreItem {...item}/>
           </Col>
         ))}

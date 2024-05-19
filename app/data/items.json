@@ -1,0 +1,33 @@
+[
+    {
+        "id":1,
+        "name":"T-shirt",
+        "imgUrl":"./Tees.jpg",
+        "price":22.45
+    },
+    {
+        "id":2,
+        "name":"sidebag",
+        "imgUrl":"./sidebag.jpeg",
+        "price":149.99
+    },
+    {
+        "id":3,
+        "name":"Track",
+        "imgUrl":"./track.jpeg",
+        "price":75.49
+    },
+    {
+        "id":4,
+        "name":"Hoodie",
+        "imgUrl":"hoodie.jpeg",
+        "price":39.99
+    },
+    {
+        "id":5,
+        "name":"Exclusive wear",
+        "imgUrl":"exclusive.png",
+        "price":178.99
+
+    }
+]

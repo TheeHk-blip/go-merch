@@ -1,7 +1,9 @@
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import { Button } from '@mui/material';
 import Link from 'next/link';
-import { Navbar } from 'react-bootstrap';
+import { Col, Navbar, Row } from 'react-bootstrap';
+import StoreItems from '../data/items.json';
+import { StoreItem } from './StoreItem';
 export default function Store(){
   return(
   <>
@@ -14,7 +16,13 @@ export default function Store(){
     <div>2</div>
     </Button>
   </Navbar>
-    <h1>Welcome Innit!</h1>
+      <Row  md={2} lg={3} xl={4} className="g-3">
+        {StoreItems.map(item=>(
+          <Col key={item.id}>
+            <StoreItem {...item}/>
+          </Col>
+        ))}
+      </Row>
   </>
   )
 }

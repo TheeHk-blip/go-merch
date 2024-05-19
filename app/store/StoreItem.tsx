@@ -1,6 +1,6 @@
-import { Card } from '@mui/material'
-import CardBody from 'react-bootstrap/esm/CardBody'
-import CardImg from 'react-bootstrap/esm/CardImg'
+import { Button, CardBody, CardImg, CardTitle } from 'react-bootstrap'
+import Card from 'react-bootstrap/esm/Card'
+import { formatCurrency } from '../utilities/formatCurrency'
 
 type StoreItemProps={
     id:number
@@ -10,10 +10,19 @@ type StoreItemProps={
 }
 
 export function StoreItem({id, name, imgUrl, price}:StoreItemProps){
+    const quantity = 1
     return(
-        <Card>
+        <Card className="card">
             <CardBody>
-                <CardImg src={imgUrl} className="img"></CardImg>
+                <CardImg src={imgUrl} className="img"/>
+                <CardTitle className="ctitle">
+                    <span>{name}</span>
+                    <span>{formatCurrency(price)}</span>
+                </CardTitle>
+                <div>
+                    {quantity === 1?(
+                        <Button>+Add To Cart</Button>):null}
+                </div>
             </CardBody>
         </Card>
     )

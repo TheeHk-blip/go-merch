@@ -21,7 +21,7 @@ export  function NavBar() {
             <Link href="/signup">Sign Up</Link>
             <Link href="/login">LogIn</Link>
             <Link href="/about">About</Link>
-            <Button style={{position:"absolute",right:"16px" ,bottom:"6px"}} variant="outlined">
+            <Button style={{position:"absolute",right:"16px" ,top:"25px"}} variant="outlined">
                 <ShoppingCartIcon/>
             </Button>
         </NavbarItem>

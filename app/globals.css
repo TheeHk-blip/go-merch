@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+
 body {
   background-color: floralwhite;
   color: black;
@@ -37,7 +38,7 @@ a{
   object-fit:cover;
 }
 .button{
-  margin-left:22px;
+  margin-right: 12px;
   margin-top: 4px;
   position:inherit;
   border-radius:12px;
@@ -53,7 +54,7 @@ a{
   margin-left: 2px;
   outline-style:ridge;
   outline-color:azure;
-  border-radius: 2px;
+  border-radius: 6px;
 }
 @media screen and (min-width:500px){
   .navbar{margin: auto;}

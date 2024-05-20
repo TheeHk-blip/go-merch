@@ -2,23 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
-*{
-  box-sizing: border-box;
-}
 body {
   background-color: floralwhite;
   color: black;
   margin:0px 2px;
-}
-
-.navbar{
-  background-color: floralwhite;
-  padding: 12px;
-  align-items: center;
-  margin-bottom: 4px;
-  box-shadow: 0px 0px 4px black;
-  position: sticky;
-  top: 0;
 }
 a{
   margin-right: 6px;
@@ -44,24 +31,10 @@ a{
   padding: 4px;
   background-color: floralwhite;
 }
-.van{
-  margin-inline-end: auto;
-}
 .img{
   width:200px;
   height: 200px;
   object-fit:cover;
-}
-.card{
-  display:flex;
-  text-align: center;
-  
-}
-.ctitle{
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
-  
 }
 .button{
   margin-left:22px;
@@ -78,10 +51,17 @@ a{
   margin-bottom: 10px;
   margin-top: 4px;
   margin-left: 2px;
-  outline-style:groove;
-  outline-color: floralwhite;
-  border-radius: 10px;
+  outline-style:ridge;
+  outline-color:azure;
+  border-radius: 2px;
 }
-.div{
-  justify-content: space-between;
+@media screen and (min-width:500px){
+  .navbar{margin: auto;}
+}
+.navbar{
+  box-shadow: 0px 0px 4px black;
+  margin-bottom: 4px;
+  padding-bottom: 6px;
+  position:sticky;
+  top:0;
 }

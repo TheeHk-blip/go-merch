@@ -1,17 +1,30 @@
-import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
-import Button from '@mui/material/Button';
-import { Navbar } from "@nextui-org/react";
-import Link from "next/link";
+import { Navbar, NavbarBrand, NavbarContent, NavbarItem } from "@nextui-org/react";
+import Link from 'next/link';
+import { GoMerch } from './GoMerchLogo';
 
-export function NavBar(){
-    return(
-        <Navbar className="navbar">
+export  function NavBar() {
+
+    return (
+    <Navbar isBordered className="navbar">
+        <GoMerch/>
+        <NavbarContent className="sm:hidden pr-3" justify="center">
+        <NavbarBrand>
+        <p className="font-bold text-inherit">GoMerch</p>
+        </NavbarBrand>
+        </NavbarContent>
+
+    <NavbarContent justify="end">
+        <NavbarItem>
+        
+        </NavbarItem>
+        <NavbarItem>
             <Link href="/">Home</Link>
-            <Link href="/store">Store</Link>
+            <Link href="/signup">Sign Up</Link>
+            <Link href="/login">LogIn</Link>
             <Link href="/about">About</Link>
-            <Button style={{position:"relative", marginLeft:"10rem"}} variant="outlined">
-                <ShoppingCartIcon/>
-            </Button>
-        </Navbar>
-    )
+
+        </NavbarItem>
+    </NavbarContent>
+    </Navbar>
+);
 }

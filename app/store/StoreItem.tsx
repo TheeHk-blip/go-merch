@@ -13,7 +13,7 @@ type StoreItemProps={
 export function StoreItem({id, name, imgUrl, price}:StoreItemProps){
     return(
     <>
-    <Card className="column">
+    <Card className="column z-1">
         
     <CardBody className="d-flex flex-column py-2">
         <Image

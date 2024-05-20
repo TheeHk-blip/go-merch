@@ -13,7 +13,7 @@ type StoreItemProps={
 export function StoreItem({id, name, imgUrl, price}:StoreItemProps){
     return(
     <>
-    <Card className="column" style={{position:"inherit"}}>
+    <Card className="column">
         
     <CardBody className="d-flex flex-column py-2">
         <Image
@@ -23,7 +23,7 @@ export function StoreItem({id, name, imgUrl, price}:StoreItemProps){
             width={200}
         />
         <CardFooter className="footer">
-            <Row gp-3>
+            <Row>
             <span className="text-xl">{name}</span>
             <span className="float-right text-base">{formatCurrency(price)}</span>
             </Row>

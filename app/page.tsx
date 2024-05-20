@@ -3,7 +3,8 @@ import Link from 'next/link'
 
 export default function App(){
     return(
-    <><div className="stick">
+    <>
+    <div className="stick">
         <div className="top">
             <Image src="/go-merch.png" alt={''} width="200" height="0" className="image"></Image>
         </div>

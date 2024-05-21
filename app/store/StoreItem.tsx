@@ -1,7 +1,6 @@
 import { Button } from '@nextui-org/button'
-import { Card, CardBody, CardFooter, CardHeader } from '@nextui-org/card'
+import { Card, CardBody, CardFooter } from '@nextui-org/card'
 import { Image } from '@nextui-org/react'
-import Row from 'react-bootstrap/esm/Row'
 import { formatCurrency } from '../utilities/formatCurrency'
 
 type StoreItemProps={
@@ -12,20 +11,18 @@ type StoreItemProps={
 }
 
 export function StoreItem({id, name, imgUrl, price}:StoreItemProps){
+    const quantity = 1
     return(
     <>
     <Card
-    className="py-4 column"
+    className="py-0 column"
     isFooterBlurred
     radius='lg'
     shadow='sm'
     >
-        <CardHeader>
-            <span className="text-xl">{name}</span>
-        </CardHeader>
+        
         <Image
             isZoomed
-            isBlurred
             alt=""
             className="object-cover h-full"
             src={imgUrl}
@@ -33,14 +30,22 @@ export function StoreItem({id, name, imgUrl, price}:StoreItemProps){
         />
     <CardBody className="py-2 ">
         
-        <CardFooter className="justify-between before:bg-white/10 border-white/20 border-1 overflow-hidden py-1  before:rounded-xl rounded-large bottom-1 w-[calc(100%_-_8px)] shadow-small ml-1 z-10">
-            <div className="d-flex align-items-center flex-row">
-            <Button className="button" variant='solid' color='secondary' disableRipple={true}>+Add To Cart</Button>
-            </div>
-            <Row>
-            <span className="float-left text-base">{formatCurrency(price)}</span>
-            </Row>
+        <CardFooter className="justify-between d-flex flex-column">
+            <span className="text-xl">{name}</span>
+            <span className="float-left text-base ml-3">{formatCurrency(price)}
+            </span>
         </CardFooter>
+        <div className="mt-auto">
+                {quantity === 1 ? (
+                    <Button className="button" variant='solid' color='secondary' size="sm">+Add To Cart</Button>
+                ):(
+                    <div className="d-flex align-items-center flex-column">
+                        <div className="d-flex align-items-center justify-content-center">Hi
+                        </div>
+                        Lo
+                    </div>
+                )}
+            </div>
     </CardBody>
     </Card>
     </>

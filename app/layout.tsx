@@ -1,8 +1,11 @@
+import { useMediaQuery } from "@mui/material";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
+import * as React from 'react';
 import "./globals.css";
 import { Providers } from "./providers";
+
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -23,4 +26,11 @@ export default function RootLayout({children}: { children: React.ReactNode }) {
       </body>
     </html>
   );
+}
+
+export function SimpleMediaQuery(){
+  const matches = useMediaQuery('(min-width:600px)');
+  return(
+    <span> {'(min-width:600px) matches: ${matches}'}; </span>
+  )
 }

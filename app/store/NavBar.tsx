@@ -9,9 +9,6 @@ export function NavBar(){
     return(
         <>
         <Navbar className="navbar">
-            <NavbarBrand>
-                <GoMerch/>
-            </NavbarBrand>
             <NavbarContent>
                 <Button href="/" as={Link} color="primary">Home</Button>
                 <Button href="/signup" as={Link} isBlock showAnchorIcon color="secondary" size='sm' variant='bordered' >Sign Up</Button>

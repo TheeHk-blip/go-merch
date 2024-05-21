@@ -1,15 +1,14 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import { Navbar } from 'react-bootstrap';
 
 export default function About(){
     return(
     <>
-        <Navbar>
+        <div className='about'>
             <Link href="/">Home</Link>
             <Link href="/store">Store</Link>
             <Link href="/about">About</Link>
-        </Navbar>
+        </div>
         <div>
             <p><b>Created and Designed by:</b><i>theeBlip</i>
             <Image src="/blip.jpg" width="200" height="0" alt={''}/>

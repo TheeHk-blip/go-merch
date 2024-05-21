@@ -2,15 +2,17 @@
 import { NextUIProvider } from "@nextui-org/react";
 import React from "react";
 import ReactDOM from "react-dom/client";
-import "./index.css";
+import "./global.css";
 import App from "./page";
-
+import Store from './store/page';
 ReactDOM.createRoot(document.getElementById("root")!).render(
     <React.StrictMode>
     <NextUIProvider>
-    <main className="dark text-foreground bg-background">
+        <main className="dark text-foreground bg-background">
         <App />
-    </main>
+        <Store/>
+        </main>
     </NextUIProvider>
-</React.StrictMode>,
+    </React.StrictMode>,
 );
+

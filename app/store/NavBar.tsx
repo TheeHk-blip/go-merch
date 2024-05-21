@@ -1,7 +1,7 @@
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
-import Button from "@mui/material/Button";
-import { Navbar, NavbarBrand, NavbarContent } from "@nextui-org/react";
-import Link from 'next/link';
+import { Button } from "@nextui-org/button";
+import { Link } from '@nextui-org/link';
+import { Navbar, NavbarBrand, NavbarContent } from "@nextui-org/navbar";
 import { GoMerch } from './GoMerchLogo';
 
 export function NavBar(){
@@ -12,10 +12,10 @@ export function NavBar(){
                 <GoMerch/>
             </NavbarBrand>
             <NavbarContent className="space-x-1">
-                <Link href="/">Home</Link>
-                <Link href="/signup">Sign Up</Link>
-                <Link href="/login">Log In</Link>
-                <Button variant="outlined">
+                <Button href="/" as={Link} color="primary">Home</Button>
+                <Button href="/signup" as={Link} isBlock showAnchorIcon color="secondary" size='sm' variant='bordered' >Sign Up</Button>
+                <Button href="/login" as={Link} isBlock showAnchorIcon variant='bordered' color='secondary' size='sm'>Log In</Button>
+                <Button variant="bordered" color="secondary" radius='lg'>
                     <ShoppingCartIcon/>
                     <div>2</div>
                 </Button>

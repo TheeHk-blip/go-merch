@@ -1,6 +1,7 @@
+
+import { Button } from '@nextui-org/react'
 import Image from 'next/image'
 import Link from 'next/link'
-
 export default function App(){
     return(
     <>
@@ -11,9 +12,9 @@ export default function App(){
         <div className="nav">
             <ul>
             <li>
-            <Link href="/">Home</Link>
-            <Link href="/store">Store</Link>
-            <Link href="/about">About</Link>
+            <Button href="/" as={Link} color='primary' size='sm'>Home</Button>
+            <Button href="/store" as={Link} color='primary' size='sm' >Store</Button>
+            <Button href="/about" as={Link} color='primary' size='sm' >About</Button>
             </li>
             </ul>
         </div>

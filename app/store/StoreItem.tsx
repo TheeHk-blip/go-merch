@@ -1,5 +1,6 @@
-import Button from '@mui/material/Button'
-import { Card, CardBody, CardFooter, CardHeader, Image } from '@nextui-org/react'
+import { Button } from '@nextui-org/button'
+import { Card, CardBody, CardFooter, CardHeader } from '@nextui-org/card'
+import { Image } from '@nextui-org/react'
 import Row from 'react-bootstrap/esm/Row'
 import { formatCurrency } from '../utilities/formatCurrency'
 
@@ -13,23 +14,28 @@ type StoreItemProps={
 export function StoreItem({id, name, imgUrl, price}:StoreItemProps){
     return(
     <>
-    <Card className="column border-none "
+    <Card
+    className="py-4 column"
     isFooterBlurred
     radius='lg'
-    style={{width:"300px" }}>
+    shadow='sm'
+    >
         <CardHeader>
             <span className="text-xl">{name}</span>
         </CardHeader>
-    <CardBody className="d-flex flex-column py-2 border-none ">
         <Image
+            isZoomed
+            isBlurred
             alt=""
-            className="object-cover"
+            className="object-cover h-full"
             src={imgUrl}
             width={200}
         />
-        <CardFooter className="justify-between border-1">
+    <CardBody className="py-2 ">
+        
+        <CardFooter className="justify-between before:bg-white/10 border-white/20 border-1 overflow-hidden py-1  before:rounded-xl rounded-large bottom-1 w-[calc(100%_-_8px)] shadow-small ml-1 z-10">
             <div className="d-flex align-items-center flex-row">
-            <Button className="button" variant='contained' disableRipple={true}>+Add To Cart</Button>
+            <Button className="button" variant='solid' color='secondary' disableRipple={true}>+Add To Cart</Button>
             </div>
             <Row>
             <span className="float-left text-base">{formatCurrency(price)}</span>

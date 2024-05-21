@@ -13,6 +13,6 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
         <Store/>
         </main>
     </NextUIProvider>
-    </React.StrictMode>,
+    </React.StrictMode>
 );
 

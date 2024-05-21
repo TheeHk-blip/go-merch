@@ -54,7 +54,7 @@ a{
   outline-style:none;
   border-radius: 12px;
 }
-@media only screen and (max-width:600px){
+@media only screen and (max-width:400px){
   [class*="col-"]{
     width: 100%;
   }

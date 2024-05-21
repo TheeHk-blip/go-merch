@@ -1,4 +1,3 @@
-import { useMediaQuery } from "@mui/material";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
@@ -28,9 +27,3 @@ export default function RootLayout({children}: { children: React.ReactNode }) {
   );
 }
 
-export function SimpleMediaQuery(){
-  const matches = useMediaQuery('(min-width:600px)');
-  return(
-    <span> {'(min-width:600px) matches: ${matches}'}; </span>
-  )
-}

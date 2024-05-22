@@ -38,7 +38,7 @@ a{
   object-fit:cover;
 }
 .button{
-  margin-right: 12px;
+  width:100%;
   margin-top: 4px;
   position:inherit;
   border-radius:12px;

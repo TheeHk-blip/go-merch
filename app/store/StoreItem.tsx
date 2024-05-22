@@ -1,3 +1,4 @@
+'use client'
 import { Button } from '@nextui-org/button'
 import { Card, CardBody, CardFooter } from '@nextui-org/card'
 import { Image } from '@nextui-org/react'
@@ -15,7 +16,7 @@ export function StoreItem({id, name, imgUrl, price}:StoreItemProps){
     return(
     <>
     <Card
-    className="py-0 column"
+    className="py-1 column"
     isFooterBlurred
     radius='lg'
     shadow='sm'
@@ -26,7 +27,7 @@ export function StoreItem({id, name, imgUrl, price}:StoreItemProps){
             alt=""
             className="object-cover h-full"
             src={imgUrl}
-            width={200}
+            width={150}
         />
     <CardBody className="py-2 ">
         
@@ -36,16 +37,10 @@ export function StoreItem({id, name, imgUrl, price}:StoreItemProps){
             </span>
         </CardFooter>
         <div className="mt-auto">
-                {quantity === 1 ? (
-                    <Button className="button" variant='solid' color='secondary' size="sm">+Add To Cart</Button>
-                ):(
-                    <div className="d-flex align-items-center flex-column">
-                        <div className="d-flex align-items-center justify-content-center">Hi
-                        </div>
-                        Lo
-                    </div>
-                )}
-            </div>
+            {quantity === 1 ?(<Button className="button" variant='solid' color='secondary' size="sm">+Add To Cart</Button>
+            ):<><div>hi</div><div>lo</div></>}
+            
+        </div>
     </CardBody>
     </Card>
     </>

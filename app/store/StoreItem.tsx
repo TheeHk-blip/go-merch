@@ -25,7 +25,7 @@ export function StoreItem({id, name, imgUrl, price}:StoreItemProps){
         <Image
             isZoomed
             alt=""
-            className="object-cover h-full"
+            className="object-cover h-full img"
             src={imgUrl}
             width={250}
         />

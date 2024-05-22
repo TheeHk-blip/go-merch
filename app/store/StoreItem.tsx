@@ -16,7 +16,7 @@ export function StoreItem({id, name, imgUrl, price}:StoreItemProps){
     return(
     <>
     <Card
-    className="py-1 column"
+    className="column"
     isFooterBlurred
     radius='lg'
     shadow='sm'
@@ -27,7 +27,7 @@ export function StoreItem({id, name, imgUrl, price}:StoreItemProps){
             alt=""
             className="object-cover h-full"
             src={imgUrl}
-            width={150}
+            width={250}
         />
     <CardBody className="py-2 ">
         

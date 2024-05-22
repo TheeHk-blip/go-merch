@@ -1,5 +1,6 @@
+'use client'
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
-import { Avatar, Button, Link, Navbar, NavbarContent, NavbarItem } from '@nextui-org/react';
+import { Avatar, Button, Dropdown, DropdownItem, DropdownMenu, DropdownTrigger, Link, Navbar, NavbarContent, NavbarItem } from '@nextui-org/react';
 import { NavbarBrand } from 'react-bootstrap';
 import { GoMerch } from './GoMerchLogo';
 
@@ -7,7 +8,7 @@ export function NavBar(){
     return(
         <Navbar className="fixed navbar ">
             <NavbarContent>
-                <NavbarBrand>
+                <NavbarBrand className="sm">
                     <GoMerch/>
                 </NavbarBrand>
                 <NavbarItem>
@@ -19,8 +20,39 @@ export function NavBar(){
                     <Button color="primary" variant="ghost">
                         <ShoppingCartIcon/>
                     </Button>
-                    <Avatar src="/blip.jpg" />
                 </NavbarItem>
+                <Dropdown>
+                    <DropdownTrigger>
+                        <Avatar
+                        className="transition-transform"
+                        isBordered
+                        as="button"
+                        color="success"
+                        name="HK"
+                        size="sm"
+                        src="/blip.jpg"
+                        />
+                    </DropdownTrigger>
+                    <DropdownMenu aria-label="Profile Actions">
+                        <DropdownItem key="Profile">
+                            <p>Signed in as</p>
+                            <p className="font-semibold">theeblip@gmail.com</p>
+                        </DropdownItem>
+                        <DropdownItem key="settings">
+                            Settings
+                        </DropdownItem>
+                        <DropdownItem href="/login" key="login" color="primary">
+                            Log In
+                        </DropdownItem>
+                        <DropdownItem key="signup" href="/signup" color="primary" className="font-semibold">
+                                Sign up
+                        </DropdownItem>
+                        <DropdownItem key="helpandfeedback"   color="secondary" className="font-semibold">
+                            Help and Feedback
+                        </DropdownItem>
+
+                    </DropdownMenu>
+                </Dropdown>
             </NavbarContent>
         </Navbar>
     )

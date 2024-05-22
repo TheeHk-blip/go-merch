@@ -39,13 +39,13 @@ a{
 }
 .button{
   width:100%;
-  margin-top: 4px;
-  position:inherit;
+  margin-top: 2px;
   border-radius:12px;
 }
 .column{
   float: left;
   width:max-content;
+  height: max-content;
   justify-content:space-between;
   margin-top: 70px;
   margin-left: 2px;

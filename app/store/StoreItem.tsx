@@ -1,7 +1,6 @@
 'use client'
-import { Button } from '@nextui-org/button'
 import { Card, CardBody, CardFooter } from '@nextui-org/card'
-import { Image } from '@nextui-org/react'
+import { Button, Image } from '@nextui-org/react'
 import { formatCurrency } from '../utilities/formatCurrency'
 
 type StoreItemProps={
@@ -12,12 +11,11 @@ type StoreItemProps={
 }
 
 export function StoreItem({id, name, imgUrl, price}:StoreItemProps){
-    const quantity = 1
+    const quantity = 2
     return(
     <>
     <Card
     className="column"
-    isFooterBlurred
     radius='lg'
     shadow='sm'
     >
@@ -33,13 +31,19 @@ export function StoreItem({id, name, imgUrl, price}:StoreItemProps){
         
         <CardFooter className="justify-between d-flex flex-column">
             <span className="text-xl">{name}</span>
-            <span className="float-left text-base ml-3">{formatCurrency(price)}
+            <span className="text-base ml-3">{formatCurrency(price)}
             </span>
         </CardFooter>
         <div className="mt-auto">
-            {quantity === 1 ?(<Button className="button" variant='solid' color='secondary' size="sm">+Add To Cart</Button>
-            ):<><div>hi</div><div>lo</div></>}
-            
+            {quantity === 2 ?(
+            <Button
+            className="button" variant='ghost' color='secondary' size="sm">+Add To Cart</Button>
+            ):(
+                <div>
+                <div>hi</div>
+                lo
+                </div>
+            )}
         </div>
     </CardBody>
     </Card>

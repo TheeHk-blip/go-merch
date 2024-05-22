@@ -1,3 +1,4 @@
+import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import { Avatar, Button, Link, Navbar, NavbarContent, NavbarItem } from '@nextui-org/react';
 import { NavbarBrand } from 'react-bootstrap';
 import { GoMerch } from './GoMerchLogo';
@@ -15,6 +16,9 @@ export function NavBar(){
             </NavbarContent>
             <NavbarContent className="navcontent">
                 <NavbarItem className="flex gap-3 items-center">
+                    <Button color="primary" variant="ghost">
+                        <ShoppingCartIcon/>
+                    </Button>
                     <Avatar src="/blip.jpg" />
                 </NavbarItem>
             </NavbarContent>

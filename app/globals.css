@@ -74,13 +74,15 @@ a{
     width:auto;
   }
   .img{
-    width: 100px;
-    height:100px;
+    width: 75px;
+    height:75px;
     object-fit: cover;
   }
   .column{
     width: moz-fit-content;
+    width:auto;
     height: moz-fit-content;
+    height: auto;
     justify-content: space-between;
   }
 }

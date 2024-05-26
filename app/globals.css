@@ -74,15 +74,13 @@ a{
     width:auto;
   }
   .img{
-    width:auto;
-    height:auto;
+    width:65px;
+    height:65px;
     object-fit: cover;
   }
   .column{
-    width: moz-fit-content;
-    width:auto;
-    height: moz-fit-content;
-    height: auto;
+    width:85px;
+    height: 85px;
     justify-content:flex-start;
     display: flexbox;
   }

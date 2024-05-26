@@ -74,7 +74,7 @@ a{
     width:auto;
   }
   .img{
-    width:max-content;
+    width:100px;
     height:80px;
     object-fit:cover;
   }

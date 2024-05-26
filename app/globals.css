@@ -74,7 +74,7 @@ a{
     width:auto;
   }
   .img{
-    width:80px;
+    width:auto;
     height:80px;
     object-fit:cover;
   }
@@ -86,5 +86,6 @@ a{
   }
   .text{
     font-size: small;
+    justify-content:space-between;
   }
 }

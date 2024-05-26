@@ -74,7 +74,7 @@ a{
     width:auto;
   }
   .img{
-    width:auto;
+    width:max-content;
     height:80px;
     object-fit:cover;
   }
@@ -85,7 +85,7 @@ a{
     display: flexbox;
   }
   .text{
-    font-size: small;
+    font-size:x-small;
     justify-content:space-between;
   }
 }

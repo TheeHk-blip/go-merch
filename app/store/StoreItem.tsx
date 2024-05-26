@@ -30,9 +30,11 @@ export function StoreItem({id, name, imgUrl, price}:StoreItemProps){
     <CardBody className="py-2 ">
         
         <CardFooter className="justify-between d-flex flex-column">
+            <div className="text">
             <span className="text-xl">{name}</span>
             <span className="text-base ml-3">{formatCurrency(price)}
             </span>
+            </div>
         </CardFooter>
         <div className="mt-auto">
             {quantity === 2 ?(

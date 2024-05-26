@@ -84,4 +84,7 @@ a{
     justify-content:flex-start;
     display: flexbox;
   }
+  .text{
+    font-size: small;
+  }
 }

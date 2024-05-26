@@ -31,7 +31,7 @@ export function StoreItem({id, name, imgUrl, price}:StoreItemProps){
         
         <CardFooter className="justify-between d-flex flex-column">
             <div className="text">
-            <span className="text-xl">{name}</span>
+            <span className="text-l">{name}</span>
             <span className="text-base ml-3">{formatCurrency(price)}
             </span>
             </div>

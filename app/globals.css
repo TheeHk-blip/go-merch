@@ -74,9 +74,9 @@ a{
     width:auto;
   }
   .img{
-    width:auto;
-    height:auto;
-    object-fit:contain;
+    width:80px;
+    height:80px;
+    object-fit:cover;
   }
   .column{
     width:150px;

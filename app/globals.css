@@ -85,10 +85,10 @@ a{
     display: flexbox;
   }
   .text{
-    font-size:small;
+    font-size:medium;
     justify-content:space-between;
   }
   .price{
-    margin-left: 6px;
+    margin-left: 10px;
   }
 }

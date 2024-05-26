@@ -80,7 +80,7 @@ a{
   }
   .column{
     width:150px;
-    height:150px;
+    height:160px;
     justify-content:flex-start;
     display: flexbox;
   }

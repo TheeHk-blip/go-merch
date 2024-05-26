@@ -74,8 +74,8 @@ a{
     width:auto;
   }
   .img{
-    width: 75px;
-    height:75px;
+    width:auto;
+    height:auto;
     object-fit: cover;
   }
   .column{
@@ -83,6 +83,7 @@ a{
     width:auto;
     height: moz-fit-content;
     height: auto;
-    justify-content: space-between;
+    justify-content:flex-start;
+    display: flexbox;
   }
 }

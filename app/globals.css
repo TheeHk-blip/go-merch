@@ -85,8 +85,7 @@ a{
     display: flexbox;
   }
   .text{
-    font-size:medium;
-    justify-content:space-between;
+    font-size:small;
   }
   .price{
     margin-left: 10px;

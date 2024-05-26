@@ -79,8 +79,8 @@ a{
     object-fit: cover;
   }
   .column{
-    width:100px;
-    height:100px;
+    width:125px;
+    height:125px;
     justify-content:flex-start;
     display: flexbox;
   }

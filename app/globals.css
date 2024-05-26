@@ -90,4 +90,7 @@ a{
   .price{
     margin-left: 10px;
   }
+  .text-l{
+    font-size: small;
+  }
 }

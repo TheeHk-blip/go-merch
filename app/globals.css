@@ -79,7 +79,8 @@ a{
     object-fit: cover;
   }
   .column{
-    width: max-content;
-    height: max-content;
+    width: moz-fit-content;
+    height: moz-fit-content;
+    justify-content: space-between;
   }
 }

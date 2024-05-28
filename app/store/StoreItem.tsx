@@ -1,7 +1,7 @@
 'use client'
-import { Card, CardBody, CardFooter } from '@nextui-org/card'
-import { Button, Image } from '@nextui-org/react'
-import { formatCurrency } from '../utilities/formatCurrency'
+import { Card, CardBody, CardFooter } from '@nextui-org/card';
+import { Button, Image } from '@nextui-org/react';
+import { formatCurrency } from '../utilities/formatCurrency';
 
 type StoreItemProps={
     id:number
@@ -11,7 +11,7 @@ type StoreItemProps={
 }
 
 export function StoreItem({id, name, imgUrl, price}:StoreItemProps){
-    const quantity = 2
+    const quantity = 0
     return(
     <>
     <Card
@@ -35,7 +35,7 @@ export function StoreItem({id, name, imgUrl, price}:StoreItemProps){
             </span>
         </CardFooter>
         <div className="mt-auto">
-            {quantity === 2 ?(
+            {quantity === 0 ?(
             <Button
             className="button" variant='ghost' color='secondary' size="sm">+Add To Cart</Button>
             ):(

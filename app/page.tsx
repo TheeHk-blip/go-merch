@@ -1,24 +1,23 @@
-
-import { Button } from '@nextui-org/react'
+import { Button, Navbar, NavbarContent } from '@nextui-org/react'
 import Image from 'next/image'
 import Link from 'next/link'
+import { NavbarBrand } from 'react-bootstrap'
+import { GoMerch } from './store/GoMerchLogo'
+
 export default function App(){
     return(
-    <>
-    <div className="stick">
-        <div className="top">
-            <Image src="/go-merch.png" alt={''} width="200" height="0" className="image"></Image>
-        </div>
-        <div className="nav">
-            <ul>
-            <li>
-            <Button href="/" as={Link} color='primary' size='sm'>Home</Button>
-            <Button href="/store" as={Link} color='primary' size='sm' >Store</Button>
-            <Button href="/about" as={Link} color='primary' size='sm' >About</Button>
-            </li>
-            </ul>
-        </div>
-        </div>
+        <>
+
+        <Navbar style={{boxShadow:"0px 0px 4px black"}}>
+            <NavbarContent>
+                <NavbarBrand style={{marginBottom:"2px"}}>
+                    <GoMerch/><p><b>Fashion Creates Confidence</b></p>
+                    
+                </NavbarBrand>
+            </NavbarContent>
+            <Button href="/store" as={Link} color='secondary' size='sm' variant='ghost'>Store</Button>
+            <Button href="/about" as={Link} color='secondary' size='sm' variant='ghost'>About</Button>
+        </Navbar>
         <div>
             
             <h1 className="text-xl">Who Are We?</h1>
@@ -40,7 +39,6 @@ export default function App(){
             <div>
                 <b>3.DOJA CAT</b>
                 < Image src='/doja.png' alt={''} width="250" height="0" />After pulling up to the famed Mark Hotel wearing nothing but a plastic bag earlier today, the singer changed into a wet T-shirt dress by Vetements for the red carpet. Her glitter tears, thick black eyeliner, and bleach-blonde pixie cut made the unconventional look feel even more edgy.
-
             </div>
             </section>
             

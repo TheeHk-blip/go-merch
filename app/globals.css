@@ -6,7 +6,6 @@
 body {
   background-color:whitesmoke;
   color: black;
-  margin:0px 2px;
 }
 a{
   margin-right: 6px;
@@ -79,4 +78,11 @@ a{
   .text-l{
     font-size: small;
   }
+}
+.dropdown{
+  background:azure;
+  max-width:max-content;
+}
+.login{
+  max-width:125px;
 }

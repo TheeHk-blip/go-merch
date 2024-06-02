@@ -21,7 +21,7 @@ export function NavBar(){
                         <ShoppingCartIcon/>
                     </Button>
                 </NavbarItem>
-                <Dropdown>
+                <Dropdown className="dropdown">
                     <DropdownTrigger>
                         <Avatar
                         className="transition-transform"
@@ -33,20 +33,18 @@ export function NavBar(){
                         src="/blip.jpg"
                         />
                     </DropdownTrigger>
-                    <DropdownMenu aria-label="Profile Actions">
+                    <DropdownMenu aria-label="Profile Actions" >
                         <DropdownItem key="Profile">
-                            <p>Signed in as</p>
+                            <p>Signed in as:</p>
                             <p className="font-semibold">theeblip@gmail.com</p>
+                        </DropdownItem>
+                        <DropdownItem key="login" color="primary" href="/login" variant='bordered' className='login'>
+                            Log In
                         </DropdownItem>
                         <DropdownItem key="settings">
                             Settings
                         </DropdownItem>
-                        <DropdownItem href="/login" key="login" color="primary">
-                            Log In
-                        </DropdownItem>
-                        <DropdownItem key="signup" href="/signup" color="primary" className="font-semibold">
-                                Sign up
-                        </DropdownItem>
+                        
                         <DropdownItem key="helpandfeedback"   color="secondary" className="font-semibold">
                             Help and Feedback
                         </DropdownItem>

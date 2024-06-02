@@ -1,9 +1,11 @@
-import { Col, Row } from 'react-bootstrap'
-import storeItems from "../data/items.json"
-import { NavBar } from './NavBar'
-import { StoreItem } from './StoreItem'
+import { Col, Row } from 'react-bootstrap';
+import storeItems from "../data/items.json";
+import { NavBar } from './NavBar';
+import { StoreItem } from './StoreItem';
+
 
 export default function Store(){
+    
     return(
         <>
         
@@ -19,3 +21,5 @@ export default function Store(){
         </>
     )
 }
+
+

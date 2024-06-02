@@ -50,7 +50,7 @@ export default function SignUpForm(){
                 <input className="input" required
                 type="password"
                 placeholder="Password"
-                value={confirmpassword}
+                value={password}
                 onChange={(e) => setPassword(e.target.value)}/>
                 <LockIcon className="icon"/>
                 <Button className='btn' variant="light" onClick={ShowPassword}>
@@ -64,9 +64,8 @@ export default function SignUpForm(){
                 <input className="input" required
                 type="password"
                 placeholder="Confirm Password"
-                value={password}
-                onChange={(e) => setConfirmPassword(e.target.value)}
-                id="myInput"/>
+                value={confirmpassword}
+                onChange={(e) => setConfirmPassword(e.target.value)}/>
                 <LockIcon className="icon"/>
                 <Button className='btn' variant="light" onClick={ShowPassword}>
                 <VisibilityIcon className='eye'/>

@@ -9,7 +9,7 @@ import { Button } from '@nextui-org/react';
 import { useState } from "react";
 import './signup.css';
 
-export default function LoginForm(){
+export default function SignUpForm(){
     const [emailaddress, setEmailAddress ] = useState("")
     const [password, setPassword] = useState("")
     const [username, setUserName] = useState("")
@@ -37,7 +37,7 @@ export default function LoginForm(){
                 <div className="email">
                 <label>
                 <input className='input' required
-                type="text"
+                type="email"
                 placeholder="Email Address"
                 value={emailaddress}
                 onChange={(e) => setEmailAddress(e.target.value)}
@@ -53,8 +53,8 @@ export default function LoginForm(){
                 value={confirmpassword}
                 onChange={(e) => setPassword(e.target.value)}/>
                 <LockIcon className="icon"/>
-                <Button className='btn' variant="light" onClick={ShowPassword}
-                endContent={<VisibilityIcon className='eye'/>} >
+                <Button className='btn' variant="light" onClick={ShowPassword}>
+                <VisibilityIcon className='eye'/>
                 </Button>
                 </label>
                 </div>
@@ -68,8 +68,8 @@ export default function LoginForm(){
                 onChange={(e) => setConfirmPassword(e.target.value)}
                 id="myInput"/>
                 <LockIcon className="icon"/>
-                <Button className='btn' variant="light" onClick={ShowPassword}
-                endContent={<VisibilityIcon className='eye'/>} >
+                <Button className='btn' variant="light" onClick={ShowPassword}>
+                <VisibilityIcon className='eye'/>
                 </Button>
                 </label>
                 </div>

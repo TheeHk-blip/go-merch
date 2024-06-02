@@ -24,7 +24,7 @@ export default function LoginForm(){
                 <div className="email">
                 <label>
                 <input className='input' required
-                type="text"
+                type="email"
                 placeholder="Email Address"
                 value={emailaddress}
                 onChange={(e) => setEmailAddress(e.target.value)}

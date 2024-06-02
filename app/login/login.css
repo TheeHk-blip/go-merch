@@ -7,7 +7,6 @@
     outline-style: solid;
     outline-color: darkgray;
     outline-width: 1px;
-    backdrop-filter:blur(16px);
 }
 .wrapper{
     background-image: url('/Hhd.jpeg');

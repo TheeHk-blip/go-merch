@@ -47,7 +47,7 @@ export default function SignUpForm(){
 
                 <div className="password">
                 <label>
-                <input className="input" required
+                <input className="input pass" required
                 type="password"
                 placeholder="Password"
                 value={password}
@@ -61,7 +61,7 @@ export default function SignUpForm(){
 
                 <div className="password">
                 <label>
-                <input className="input" required
+                <input className="input pass" required
                 type="password"
                 placeholder="Confirm Password"
                 value={confirmpassword}

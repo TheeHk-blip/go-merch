@@ -34,7 +34,7 @@ export default function LoginForm(){
 
                 <div className="password">
                 <label>
-                <input className="input" required
+                <input className="input pass" required
                 type="password"
                 placeholder="Password"
                 value={password}

@@ -67,7 +67,7 @@ a{
     width:150px;
     height:160px;
     justify-content:flex-start;
-    display: flexbox;
+    display:flex;
   }
   .text{
     font-size:small;

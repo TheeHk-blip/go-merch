@@ -1,7 +1,9 @@
 'use client'
+
 import { Card, CardBody, CardFooter } from '@nextui-org/card';
 import { Button, Image } from '@nextui-org/react';
 import { formatCurrency } from '../utilities/formatCurrency';
+import { useStoreItem } from './StoreItemContext';
 
 type StoreItemProps={
     id:number
@@ -11,7 +13,13 @@ type StoreItemProps={
 }
 
 export function StoreItem({id, name, imgUrl, price}:StoreItemProps){
-    const quantity = 0
+    const {
+        getItemQuantity,
+        increaseCartQuantity,
+        decreaseCartQuantity,
+        removeFromCart
+    } = useStoreItem()
+    const quantity = getItemQuantity(id)
     return(
     <>
     <Card
@@ -35,15 +43,23 @@ export function StoreItem({id, name, imgUrl, price}:StoreItemProps){
             </span>
         </CardFooter>
         <div className="mt-auto">
-            {quantity === 0 ?(
-            <Button
-            className="button" variant='ghost' color='secondary' size="sm">+Add To Cart</Button>
+            {quantity === 0 ? (
+                <Button variant='bordered' color='primary' style={{width:"100%"}} 
+                onClick ={() => increaseCartQuantity(id)} > + Add To Cart</Button>
             ):(
+            <div>
                 <div>
-                <div>hi</div>
-                lo
+                    <Button variant='solid' color='primary' size='sm'
+                    onClick ={() => decreaseCartQuantity(id)}>-</Button>
+                        <span>
+                            {quantity} in cart
+                        </span>
+                    <Button variant='solid' color='primary' className='mb-2' size='sm' style={{float:"right"}}
+                    onClick ={() => increaseCartQuantity(id)}>+</Button>
                 </div>
-            )}
+                <Button variant="solid" color='danger' size='sm' className='text-center' style={{marginLeft:"3.7rem" ,padding:'0'}}
+                onClick ={() => removeFromCart(id)}>Remove</Button>
+            </div>)}
         </div>
     </CardBody>
     </Card>

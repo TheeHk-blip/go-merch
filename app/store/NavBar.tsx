@@ -3,8 +3,11 @@ import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import { Avatar, Button, Dropdown, DropdownItem, DropdownMenu, DropdownTrigger, Link, Navbar, NavbarContent, NavbarItem } from '@nextui-org/react';
 import { NavbarBrand } from 'react-bootstrap';
 import { GoMerch } from './GoMerchLogo';
+import { Shoppingcart } from './Shoppincart';
+import { useStoreItem } from './StoreItemContext';
 
 export function NavBar(){
+    const { openCart, cartQuantity} = useStoreItem()
     return(
         <Navbar className="fixed navbar ">
             <NavbarContent>
@@ -17,9 +20,14 @@ export function NavBar(){
             </NavbarContent>
             <NavbarContent className="navcontent">
                 <NavbarItem className="flex gap-3 items-center">
-                    <Button color="primary" variant="ghost">
+                    {cartQuantity > 0 &&(
+                    <Button color="primary" variant="ghost" onClick={openCart}>
                         <ShoppingCartIcon/>
-                    </Button>
+                        {cartQuantity}
+                    </Button>)}
+                </NavbarItem>
+                <NavbarItem>
+                    <Shoppingcart/>
                 </NavbarItem>
                 <Dropdown className="dropdown">
                     <DropdownTrigger>

@@ -1,146 +1,117 @@
 [
-    {
-        "id":1,
-        "name":"T-shirt",
-        "imgUrl":"./Tees.jpg",
-        "price":22.45
-    },
-    {
-        "id":5,
-        "name":"T-shirt",
-        "imgUrl":"./Tees.jpg",
-        "price":22.45
-    },
-    {
-        "id":2,
-        "name":"T-shirt",
-        "imgUrl":"./Tees.jpg",
-        "price":22.45
-    },
-    {
-        "id":3,
-        "name":"T-shirt",
-        "imgUrl":"./Tees.jpg",
-        "price":22.45
-    },
-    {
-        "id":4,
-        "name":"T-shirt",
-        "imgUrl":"./Tees.jpg",
-        "price":22.45
-    },
+    
     {
         "id":6,
         "name":"Sidebag",
-        "imgUrl":"./sidebag.jpeg",
+        "imgUrl":"/sidebag.jpeg",
         "price":149.99
     },
     {
         "id":7,
         "name":"Sidebag",
-        "imgUrl":"./sidebag.jpeg",
+        "imgUrl":"/sidebag.jpeg",
         "price":149.99
     },
     {
         "id":8,
         "name":"Sidebag",
-        "imgUrl":"./sidebag.jpeg",
+        "imgUrl":"/sidebag.jpeg",
         "price":149.99
     },
     {
         "id":9,
         "name":"Sidebag",
-        "imgUrl":"./sidebag.jpeg",
+        "imgUrl":"/sidebag.jpeg",
         "price":149.99
     },
     {
         "id":10,
         "name":"Sidebag",
-        "imgUrl":"./sidebag.jpeg",
+        "imgUrl":"/sidebag.jpeg",
         "price":149.99
     },
     {
         "id":11,
         "name":"Track",
-        "imgUrl":"./track.jpeg",
+        "imgUrl":"/track.jpeg",
         "price":75.49
     },
     {
         "id":12,
         "name":"Track",
-        "imgUrl":"./track.jpeg",
+        "imgUrl":"/track.jpeg",
         "price":75.49
     },
     {
         "id":13,
         "name":"Track",
-        "imgUrl":"./track.jpeg",
+        "imgUrl":"/track.jpeg",
         "price":75.49
     },
     {
         "id":14,
         "name":"Track",
-        "imgUrl":"./track.jpeg",
+        "imgUrl":"/track.jpeg",
         "price":75.49
     },
     {
         "id":15,
         "name":"Track",
-        "imgUrl":"./track.jpeg",
+        "imgUrl":"/track.jpeg",
         "price":75.49
     },
     {
         "id":16,
         "name":"Hoodie",
-        "imgUrl":"./hoodie.jpeg",
+        "imgUrl":"/hoodie.jpeg",
         "price":39.99
     },
     {
         "id":17,
         "name":"Hoodie",
-        "imgUrl":"./hoodie.jpeg",
+        "imgUrl":"/hoodie.jpeg",
         "price":39.99
     },
     {
         "id":18,
         "name":"Hoodie",
-        "imgUrl":"./hoodie.jpeg",
+        "imgUrl":"/hoodie.jpeg",
         "price":39.99
     },
     {
         "id":19,
         "name":"Hoodie",
-        "imgUrl":"./hoodie.jpeg",
+        "imgUrl":"/hoodie.jpeg",
         "price":39.99
     },
     {
         "id":20,
         "name":"Hoodie",
-        "imgUrl":"./hoodie.jpeg",
+        "imgUrl":"/hoodie.jpeg",
         "price":39.99
     },
     {
         "id":21,
         "name":"Exclusive",
-        "imgUrl":"./exclusive.png",
+        "imgUrl":"/exclusive.png",
         "price":178.99
     },
     {
         "id":22,
         "name":"Exclusive",
-        "imgUrl":"./exclusive.png",
+        "imgUrl":"/exclusive.png",
         "price":178.99
     },
     {
         "id":23,
         "name":"Exclusive",
-        "imgUrl":"./exclusive.png",
+        "imgUrl":"/exclusive.png",
         "price":178.99
     },
     {
         "id":24,
         "name":"Exclusive",
-        "imgUrl":"./exclusive.png",
+        "imgUrl":"/exclusive.png",
         "price":178.99
     }
 ]

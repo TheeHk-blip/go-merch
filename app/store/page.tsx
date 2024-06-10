@@ -1,10 +1,8 @@
 import { Col, Row } from 'react-bootstrap';
 import storeItems from "../data/items.json";
 import { NavBar } from './NavBar';
-import { Shoppingcart } from './Shoppincart';
 import { StoreItem } from './StoreItem';
 import { StoreItemPovider } from './StoreItemContext';
-
 
 export default function Store(){
     
@@ -19,7 +17,6 @@ export default function Store(){
                 </Col>
             ))}
         </Row>
-        <Shoppingcart/>
         </StoreItemPovider>
         </>
     )

@@ -6,6 +6,7 @@
 body {
   background-color:whitesmoke;
   color: black;
+  overflow: scroll;
 }
 a{
   margin-right: 6px;

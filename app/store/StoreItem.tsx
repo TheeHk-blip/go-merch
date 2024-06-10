@@ -21,7 +21,7 @@ export function StoreItem({id, name, imgUrl, price}:StoreItemProps){
     } = useStoreItem()
     const quantity = getItemQuantity(id)
     return(
-    <>
+    <div className='store'>
     <Card
     className="column"
     radius='lg'
@@ -63,6 +63,6 @@ export function StoreItem({id, name, imgUrl, price}:StoreItemProps){
         </div>
     </CardBody>
     </Card>
-    </>
+    </div>
     )
 }

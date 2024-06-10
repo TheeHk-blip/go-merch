@@ -12,13 +12,15 @@ type CartItemProps = {
 
 export function CartItem({id, quantity}:CartItemProps){
     const {removeFromCart} = useStoreItem()
-    const item = storeItems.find( i=> i.id === id )
+    const item = storeItems.find( i => i.id === id )
     if (item == null) return null
     return(
-        <Stack direction='horizontal'>
+        <Stack direction='vertical'>
             < Image
             alt={''}
             src={item.imgUrl}
+            width={200}
+            height={0}
             style={{width:'125px', height:'75px', objectFit:'cover'}}
             />
             <div>

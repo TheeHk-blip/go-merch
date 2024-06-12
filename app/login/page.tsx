@@ -25,7 +25,6 @@ export default function LoginForm(){
                 <input className='input' required
                 type="email"
                 placeholder="Email Address"
-                value=''
                 /><EmailIcon className="icon"/>
                 </label>
                 </div>
@@ -35,7 +34,6 @@ export default function LoginForm(){
                 <input className="input pass" required
                 type={isVisible ? "text" :"password" }
                 placeholder="Password"
-                value=''
                 /><LockIcon className="icon"/>
                 <button className='btn' onClick={toggleVisibility} >
                     {isVisible ? (
@@ -52,7 +50,8 @@ export default function LoginForm(){
                 </label>
                 <a href="#" className="forgot">Forgot Password ?</a>
                 </div>
-                <div><Button type="submit" className="mt-2" style={{width:"100%", fontWeight:"bolder", fontSize:"18px"}} variant='ghost' color='primary' >LogIn</Button>
+                <div>
+                    <Button type="submit" className="mt-2" style={{width:"100%", fontWeight:"bolder", fontSize:"18px"}} variant='ghost' color='primary' >LogIn</Button>
                 </div>
                 <div className="remember">
                 <p>Don&apos;t Have an Account?

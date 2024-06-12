@@ -13,7 +13,6 @@ import './signup.css';
 export default function SignUpForm(){
     const [isVisible, setIsVisible] = React.useState(false)
     const toggleVisibility = () => setIsVisible(!isVisible);
-
     return(
         <div className="wrapper">
         <Card className="card">
@@ -25,7 +24,6 @@ export default function SignUpForm(){
                 <input className='input' required
                 type="text"
                 placeholder="Username"
-                value=''
                 /><AccountBoxIcon className="icon"/>
                 </label>
                 </div>
@@ -35,7 +33,6 @@ export default function SignUpForm(){
                 <input className='input' required
                 type="email"
                 placeholder="Email Address"
-                value=''
                 /><EmailIcon className="icon"/>
                 </label>
                 </div>
@@ -45,7 +42,7 @@ export default function SignUpForm(){
                 <input className="input pass" required
                 type={isVisible ? "text":"password" }
                 placeholder="Password"
-                value=''/>
+                />
                 <LockIcon className="icon"/>
                 <button className='btn' onClick={toggleVisibility}>
                 {isVisible ? (
@@ -61,7 +58,7 @@ export default function SignUpForm(){
                 <input className="input pass" required
                 type={isVisible ? "text": "password"}
                 placeholder="Confirm Password"
-                value=''
+                
                 />
                 <LockIcon className="icon"/>
                 <button className='btn'

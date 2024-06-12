@@ -3,7 +3,6 @@ import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import { Avatar, Button, Dropdown, DropdownItem, DropdownMenu, DropdownTrigger, Link, Navbar, NavbarContent, NavbarItem } from '@nextui-org/react';
 import { NavbarBrand } from 'react-bootstrap';
 import { GoMerch } from './GoMerchLogo';
-import { ShoppingCart } from './Shoppincart';
 import { useStoreItem } from './StoreItemContext';
 
 export function NavBar(){
@@ -30,7 +29,6 @@ export function NavBar(){
                 </Button>
             </NavbarItem>
             <NavbarItem>
-                <ShoppingCart/>
             </NavbarItem>
             <Dropdown className="dropdown">
                 <DropdownTrigger>

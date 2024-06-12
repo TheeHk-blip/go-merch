@@ -3,18 +3,19 @@
 import EmailIcon from '@mui/icons-material/Email';
 import LockIcon from '@mui/icons-material/Lock';
 import VisibilityIcon from '@mui/icons-material/Visibility';
+import VisibilityOffIcon from '@mui/icons-material/VisibilityOff';
 import { Card, CardBody } from "@nextui-org/card";
 import { Button } from '@nextui-org/react';
-import { useState } from "react";
+import React, { useState } from 'react';
 import './login.css';
 
 export default function LoginForm(){
-    const [emailaddress, setEmailAddress ] = useState("")
-    const [password, setPassword] = useState("")
+    const [emailaddress, setEmailAddress] = useState('');
+    const [password, setPassword] = useState('');
 
-    function ShowPassword(){
+    const [isVisible, setIsVisible] = React.useState(false)
+    const toggleVisibility = () => setIsVisible(!isVisible);
 
-    }
     return(
         <div className="wrapper">
         <Card className="card">
@@ -35,13 +36,18 @@ export default function LoginForm(){
                 <div className="password">
                 <label>
                 <input className="input pass" required
-                type="password"
+                type={isVisible ? "text" :"password" }
                 placeholder="Password"
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
                 id="myInput"
-                /><LockIcon className="icon"/><Button className='btn' variant='light' onClick={ShowPassword} >
-                <VisibilityIcon className='eye'/></Button>
+                /><LockIcon className="icon"/>
+                <button className='btn' onClick={toggleVisibility} >
+                    {isVisible ? (
+                <VisibilityIcon className='eye'/>):(
+                    <VisibilityOffIcon/>
+                )}
+                </button>
                 </label>
                 </div>
 

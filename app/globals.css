@@ -66,7 +66,7 @@ a{
   }
   .column{
     width:150px;
-    height:160px;
+    height:200px;
     justify-content:flex-start;
     display:flex;
   }
@@ -78,6 +78,9 @@ a{
   }
   .text-l{
     font-size: small;
+  }
+  p.fashion{
+    display:none;
   }
 }
 .dropdown{

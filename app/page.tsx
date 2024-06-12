@@ -10,7 +10,7 @@ export default function App(){
         <Navbar style={{boxShadow:"0px 0px 4px black"}}  isBlurred={false} >
             <NavbarContent>
                 <NavbarBrand style={{marginBottom:"2px"}}>
-                    <GoMerch/><p><b>Fashion Creates Confidence</b></p>
+                    <GoMerch/><p className="fashion"><b>Fashion Creates Confidence</b></p>
                     
                 </NavbarBrand>
             </NavbarContent>

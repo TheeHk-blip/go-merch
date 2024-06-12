@@ -4,9 +4,10 @@ import AccountBoxIcon from '@mui/icons-material/AccountBox';
 import EmailIcon from '@mui/icons-material/Email';
 import LockIcon from '@mui/icons-material/Lock';
 import VisibilityIcon from '@mui/icons-material/Visibility';
+import VisibilityOffIcon from '@mui/icons-material/VisibilityOff';
 import { Card, CardBody } from "@nextui-org/card";
 import { Button } from '@nextui-org/react';
-import { useState } from "react";
+import React, { useState } from 'react';
 import './signup.css';
 
 export default function SignUpForm(){
@@ -14,9 +15,9 @@ export default function SignUpForm(){
     const [password, setPassword] = useState("")
     const [username, setUserName] = useState("")
     const [confirmpassword, setConfirmPassword] = useState("")
-    function ShowPassword(){
+    const [isVisible, setIsVisible] = React.useState(false)
+    const toggleVisibility = () => setIsVisible(!isVisible);
 
-    }
     return(
         <div className="wrapper">
         <Card className="card">
@@ -48,28 +49,35 @@ export default function SignUpForm(){
                 <div className="password">
                 <label>
                 <input className="input pass" required
-                type="password"
+                type={isVisible ? "text":"password" }
                 placeholder="Password"
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}/>
                 <LockIcon className="icon"/>
-                <Button className='btn' variant="light" onClick={ShowPassword}>
-                <VisibilityIcon className='eye'/>
-                </Button>
+                <button className='btn' onClick={toggleVisibility}>
+                {isVisible ? (
+                <VisibilityIcon className='eye'/>):(
+                    <VisibilityOffIcon/>
+                )}
+                </button>
                 </label>
                 </div>
 
                 <div className="password">
                 <label>
                 <input className="input pass" required
-                type="password"
+                type={isVisible ? "text": "password"}
                 placeholder="Confirm Password"
                 value={confirmpassword}
                 onChange={(e) => setConfirmPassword(e.target.value)}/>
                 <LockIcon className="icon"/>
-                <Button className='btn' variant="light" onClick={ShowPassword}>
-                <VisibilityIcon className='eye'/>
-                </Button>
+                <button className='btn'
+                onClick={toggleVisibility}>
+                    {isVisible ? (
+                <VisibilityIcon className='eye'/>):(
+                    <VisibilityOffIcon/>
+                )}
+                </button>
                 </label>
                 </div>
 

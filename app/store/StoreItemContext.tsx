@@ -1,7 +1,6 @@
 'use client'
 
 import { ReactNode, createContext, useContext, useState } from 'react';
-import { ShoppingCart } from './Shoppincart';
 
 
 type StoreItemPoviderProps = {
@@ -98,7 +97,6 @@ export function StoreItemPovider ({ children}:StoreItemPoviderProps) {
     return(
         <><StoreItemContext.Provider value={{ increaseCartQuantity, decreaseCartQuantity, removeFromCart, getItemQuantity, cartItems, openCart, closeCart, cartQuantity}}>
             {children}
-            <ShoppingCart/>
         </StoreItemContext.Provider></>
     )
 }

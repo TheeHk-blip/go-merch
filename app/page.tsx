@@ -113,7 +113,7 @@ export default function App(){
         <b>Global Collaboration and Cultural Exchange</b>
         The future of fashion will be characterized by global collaboration and cultural exchange. Designers from different parts of the world will collaborate, merging diverse styles and techniques. This cross-cultural exchange will enrich the fashion industry, fostering creativity and innovation.<br/>
         
-        <b>Conclusion</b>
+        <b>Conclusion</b><br/>
         Fashion in the 21st century is a dynamic and ever-evolving industry that reflects broader societal changes and technological advancements. From the rise of fast fashion to the growing emphasis on sustainability and inclusivity, fashion today is more than just clothing; it is a powerful form of self-expression and a reflection of our times. As we look to the future, the fashion industry will continue to innovate and adapt, embracing new technologies and practices that align with the values and needs of modern consumers.<br/><br/>
         </div>
         <p>

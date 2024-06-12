@@ -20,9 +20,9 @@ export default function App(){
             <Button href="/store" as={Link} color='secondary' size='sm' variant='ghost'>Store</Button>
             <Button href="/about" as={Link} color='secondary' size='sm' variant='ghost'>About</Button>
         </Navbar><div className='ml-auto mr-auto'>
-                <b className='text-xl m-auto'>Fashion in the 21st Century: Evolution, Trends, and the Future.</b><br />
-                <div>
-                <Image className='fashion' alt={''} src={'/hit.jpeg'} width={200} height={0} />
+                <b className='tex m-auto'>Fashion in the 21st Century: Evolution, Trends, and the Future.</b><br />
+                <div className='fashion'>
+                <Image className='fashion' alt={''} src={'/peakpx.jpg'} width={200} height={0} />
                 </div>
                 <b>Introduction</b><br />
                 <div>

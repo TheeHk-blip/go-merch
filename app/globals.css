@@ -100,3 +100,10 @@ a{
 .trends{
   object-fit: cover;
 }
+.fashion{
+  width:100%;
+  height:50%;
+}
+.tex{
+  font-size: xx-large;
+}

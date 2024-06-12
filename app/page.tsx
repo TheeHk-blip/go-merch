@@ -24,7 +24,7 @@ export default function App(){
                 <div className='fashion'>
                 <Image className='fashion' alt={''} src={'/peakpx.jpg'} width={200} height={0} />
                 </div>
-                <b>Introduction</b><br />
+                <b className='tex'>Introduction</b><br />
                 <div>
                     Fashion in the 21st century is a fascinating study of contrasts and innovation. This period has seen rapid changes driven by technological advancements, shifts in cultural norms, and a growing awareness of environmental issues. From the rise of fast fashion to the increasing focus on sustainability, fashion today is a complex and dynamic industry that reflects broader societal trends. This blog explores the major trends, transformations, and future directions of fashion in the 21st century.<br />
 

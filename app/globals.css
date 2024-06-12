@@ -97,3 +97,6 @@ a{
   width:350px;
   height:auto;
 }
+.trends{
+  object-fit: cover;
+}

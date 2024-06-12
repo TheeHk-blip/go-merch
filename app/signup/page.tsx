@@ -7,14 +7,10 @@ import VisibilityIcon from '@mui/icons-material/Visibility';
 import VisibilityOffIcon from '@mui/icons-material/VisibilityOff';
 import { Card, CardBody } from "@nextui-org/card";
 import { Button } from '@nextui-org/react';
-import React, { useState } from 'react';
+import React from 'react';
 import './signup.css';
 
 export default function SignUpForm(){
-    const [emailaddress, setEmailAddress ] = useState("")
-    const [password, setPassword] = useState("")
-    const [username, setUserName] = useState("")
-    const [confirmpassword, setConfirmPassword] = useState("")
     const [isVisible, setIsVisible] = React.useState(false)
     const toggleVisibility = () => setIsVisible(!isVisible);
 
@@ -29,8 +25,7 @@ export default function SignUpForm(){
                 <input className='input' required
                 type="text"
                 placeholder="Username"
-                value={username}
-                onChange={(e) => setUserName(e.target.value)}
+                value='username'
                 /><AccountBoxIcon className="icon"/>
                 </label>
                 </div>
@@ -40,8 +35,7 @@ export default function SignUpForm(){
                 <input className='input' required
                 type="email"
                 placeholder="Email Address"
-                value={emailaddress}
-                onChange={(e) => setEmailAddress(e.target.value)}
+                value='emailaddress'
                 /><EmailIcon className="icon"/>
                 </label>
                 </div>
@@ -51,8 +45,7 @@ export default function SignUpForm(){
                 <input className="input pass" required
                 type={isVisible ? "text":"password" }
                 placeholder="Password"
-                value={password}
-                onChange={(e) => setPassword(e.target.value)}/>
+                value='password'/>
                 <LockIcon className="icon"/>
                 <button className='btn' onClick={toggleVisibility}>
                 {isVisible ? (
@@ -68,8 +61,8 @@ export default function SignUpForm(){
                 <input className="input pass" required
                 type={isVisible ? "text": "password"}
                 placeholder="Confirm Password"
-                value={confirmpassword}
-                onChange={(e) => setConfirmPassword(e.target.value)}/>
+                value='confirmpassword'
+                />
                 <LockIcon className="icon"/>
                 <button className='btn'
                 onClick={toggleVisibility}>

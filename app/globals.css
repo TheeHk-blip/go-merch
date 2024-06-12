@@ -33,7 +33,7 @@ a{
   width:max-content;
   height: max-content;
   justify-content:space-between;
-  margin-top: 70px;
+  margin-top:13px;
   margin-left: 2px;
   margin-right: 9px;
   outline-style:ridge;
@@ -54,18 +54,21 @@ a{
   position:absolute;
   right:15px;
 }
+.space{
+  margin-bottom: 65px;
+}
 
 @media only screen and (max-width:500px) {
   .navbar{
     width:auto;
   }
   .img{
-    width:100px;
-    height:80px;
+    width:200px;
+    height:85px;
     object-fit:cover;
   }
   .column{
-    width:150px;
+    width:170px;
     height:200px;
     justify-content:flex-start;
     display:flex;

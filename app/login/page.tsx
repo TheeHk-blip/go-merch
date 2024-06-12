@@ -6,12 +6,10 @@ import VisibilityIcon from '@mui/icons-material/Visibility';
 import VisibilityOffIcon from '@mui/icons-material/VisibilityOff';
 import { Card, CardBody } from "@nextui-org/card";
 import { Button } from '@nextui-org/react';
-import React, { useState } from 'react';
+import React from 'react';
 import './login.css';
 
 export default function LoginForm(){
-    const [emailaddress, setEmailAddress] = useState('');
-    const [password, setPassword] = useState('');
 
     const [isVisible, setIsVisible] = React.useState(false)
     const toggleVisibility = () => setIsVisible(!isVisible);
@@ -27,8 +25,7 @@ export default function LoginForm(){
                 <input className='input' required
                 type="email"
                 placeholder="Email Address"
-                value={emailaddress}
-                onChange={(e) => setEmailAddress(e.target.value)}
+                value='emailaddress'
                 /><EmailIcon className="icon"/>
                 </label>
                 </div>
@@ -38,9 +35,7 @@ export default function LoginForm(){
                 <input className="input pass" required
                 type={isVisible ? "text" :"password" }
                 placeholder="Password"
-                value={password}
-                onChange={(e) => setPassword(e.target.value)}
-                id="myInput"
+                value='password'
                 /><LockIcon className="icon"/>
                 <button className='btn' onClick={toggleVisibility} >
                     {isVisible ? (

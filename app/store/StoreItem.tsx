@@ -22,6 +22,7 @@ export function StoreItem({id, name, imgUrl, price}:StoreItemProps){
     const quantity = getItemQuantity(id)
     return(
     <div className='store'>
+    <div className='space'></div>
     <Card
     className="column"
     radius='lg'
@@ -52,12 +53,12 @@ export function StoreItem({id, name, imgUrl, price}:StoreItemProps){
                     <Button variant='solid' color='primary' size='sm'
                     onClick ={() => decreaseCartQuantity(id)}>-</Button>
                         <span>
-                            {quantity} in cart
+                            {quantity}
                         </span>
                     <Button variant='solid' color='primary' className='mb-2' size='sm' style={{float:"right"}}
                     onClick ={() => increaseCartQuantity(id)}>+</Button>
                 </div>
-                <Button variant="solid" color='danger' size='sm' className='text-center' style={{marginLeft:"3.7rem" ,padding:'0'}}
+                <Button variant="solid" color='danger' size='sm' className='text-center' style={{marginLeft:"3.5rem", padding:'0'}}
                 onClick ={() => removeFromCart(id)}>Remove</Button>
             </div>)}
         </div>

@@ -25,7 +25,7 @@ export default function LoginForm(){
                 <input className='input' required
                 type="email"
                 placeholder="Email Address"
-                value='emailaddress'
+                value=''
                 /><EmailIcon className="icon"/>
                 </label>
                 </div>
@@ -35,7 +35,7 @@ export default function LoginForm(){
                 <input className="input pass" required
                 type={isVisible ? "text" :"password" }
                 placeholder="Password"
-                value='password'
+                value=''
                 /><LockIcon className="icon"/>
                 <button className='btn' onClick={toggleVisibility} >
                     {isVisible ? (

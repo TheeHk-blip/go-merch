@@ -25,7 +25,7 @@ export default function SignUpForm(){
                 <input className='input' required
                 type="text"
                 placeholder="Username"
-                value='username'
+                value=''
                 /><AccountBoxIcon className="icon"/>
                 </label>
                 </div>
@@ -35,7 +35,7 @@ export default function SignUpForm(){
                 <input className='input' required
                 type="email"
                 placeholder="Email Address"
-                value='emailaddress'
+                value=''
                 /><EmailIcon className="icon"/>
                 </label>
                 </div>
@@ -45,7 +45,7 @@ export default function SignUpForm(){
                 <input className="input pass" required
                 type={isVisible ? "text":"password" }
                 placeholder="Password"
-                value='password'/>
+                value=''/>
                 <LockIcon className="icon"/>
                 <button className='btn' onClick={toggleVisibility}>
                 {isVisible ? (
@@ -61,7 +61,7 @@ export default function SignUpForm(){
                 <input className="input pass" required
                 type={isVisible ? "text": "password"}
                 placeholder="Confirm Password"
-                value='confirmpassword'
+                value=''
                 />
                 <LockIcon className="icon"/>
                 <button className='btn'

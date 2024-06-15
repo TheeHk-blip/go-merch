@@ -51,7 +51,10 @@ export default function LoginForm(){
                 <a href="#" className="forgot">Forgot Password ?</a>
                 </div>
                 <div>
-                    <Button type="submit" className="mt-2" style={{width:"100%", fontWeight:"bolder", fontSize:"18px"}} variant='ghost' color='primary' >LogIn</Button>
+                    <Button type="submit" className="mt-2" style={{width:"100%", fontWeight:"bolder",
+                    fontSize:"18px"}} 
+                    variant='ghost' color='primary'
+                    >LogIn</Button>
                 </div>
                 <div className="remember">
                 <p>Don&apos;t Have an Account?

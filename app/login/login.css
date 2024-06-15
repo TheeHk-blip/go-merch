@@ -2,16 +2,14 @@
     margin:0;
     padding:0;
     box-sizing: border-box;
+    box-shadow: 0px 0px 8px black;
     background:transparent;
     color: white;
     outline-style: solid;
-    outline-color: darkgray;
     outline-width: 1px;
 }
 .wrapper{
-    background-image: url('/Hhd.jpeg');
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-color:darkslategray;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -23,7 +21,7 @@ a{
 a:hover{
     outline-color:skyblue;
     outline-width: 1.5px;
-    color:blue;
+    text-decoration: underline;
 }
 .remember{
     margin-top: 6px;

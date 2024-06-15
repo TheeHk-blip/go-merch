@@ -15,7 +15,7 @@ export default function SignUpForm(){
     const toggleVisibility = () => setIsVisible(!isVisible);
     return(
         <div className="wrapper">
-        <Card className="card">
+        <Card className="card backdrop-blur">
             <h1>SignUp</h1>
             <CardBody className="content-cover">
             <form>
@@ -61,7 +61,7 @@ export default function SignUpForm(){
                 
                 />
                 <LockIcon className="icon"/>
-                <button className='btn'
+                <button type="button" className='btn'
                 onClick={toggleVisibility}>
                     {isVisible ? (
                 <VisibilityIcon className='eye'/>):(
@@ -75,9 +75,10 @@ export default function SignUpForm(){
                 <label>
                 <input type="checkbox" />Accept Terms & Conditions
                 </label>
-                <a href="/terms" className="forgot">Terms & Conditions</a>
+                <a href="/terms" className="forgot">T&apos;s & C&apos;s</a>
                 </div>
-                <div><Button type="submit" className="mt-2" style={{width:"100%", fontWeight:"bolder", fontSize:"18px"}}
+                <div>
+                    <Button type="submit" className="mt-2" style={{width:"100%", fontWeight:"bolder", fontSize:"18px"}}
                 variant='ghost' color='primary' >SignUp</Button>
                 </div>
                 <div className="remember">

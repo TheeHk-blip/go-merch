@@ -16,7 +16,7 @@ export default function LoginForm(){
 
     return(
         <div className="wrapper">
-        <Card className="card">
+        <Card className="card backdrop-blur">
             <h1>LogIn</h1>
             <CardBody className="content-cover">
             <form>
@@ -35,7 +35,7 @@ export default function LoginForm(){
                 type={isVisible ? "text" :"password" }
                 placeholder="Password"
                 /><LockIcon className="icon"/>
-                <button className='btn' onClick={toggleVisibility} >
+                <button type='button' className='btn' onClick={toggleVisibility} >
                     {isVisible ? (
                 <VisibilityIcon className='eye'/>):(
                     <VisibilityOffIcon/>

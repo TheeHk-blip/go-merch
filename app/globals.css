@@ -31,7 +31,7 @@ a{
 .column{
   float: left;
   width:max-content;
-  height: max-content;
+  height:315px;
   justify-content:space-between;
   margin-top:13px;
   margin-left: 2px;

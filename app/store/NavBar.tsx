@@ -1,12 +1,20 @@
 'use client'
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
+import { Box, Drawer, List } from '@mui/material';
 import { Avatar, Button, Dropdown, DropdownItem, DropdownMenu, DropdownTrigger, Link, Navbar, NavbarContent, NavbarItem } from '@nextui-org/react';
+import React from 'react';
 import { NavbarBrand } from 'react-bootstrap';
 import { GoMerch } from './GoMerchLogo';
+import { Shoppingcart } from './Shoppincart';
 import { useStoreItem } from './StoreItemContext';
 
+
 export function NavBar(){
-    const {cartQuantity, openCart} = useStoreItem()
+    const {cartQuantity, cartItems} = useStoreItem()
+    const [open, setOpen] = React.useState(false);
+    const toggleDrawer = (newOpen:boolean) =>() => {
+        setOpen(newOpen);
+    }
 
     return(
         <>
@@ -21,12 +29,20 @@ export function NavBar(){
             </NavbarContent>
             <NavbarContent className="navcontent">
             <NavbarItem className="flex gap-3 items-center">
-                <Button color="primary" variant="ghost" onClick={openCart}>
+                
+                <Button color="primary" variant="ghost" onClick={toggleDrawer(true)} >
                     <ShoppingCartIcon />
                         {cartQuantity > 0 && (
                             <>{cartQuantity}</>
                         )}
                 </Button>
+                <Drawer open={open} onClose={toggleDrawer(false)}><Box sx={{width:300}} role="presentation">
+                    <div className="text-center text-lg" >CART</div>
+                    <List>
+                        <Shoppingcart/>
+                    </List>
+                </Box>
+                </Drawer>
             </NavbarItem>
             <NavbarItem>
             </NavbarItem>

@@ -85,8 +85,8 @@ a{
     display:none;
   }
   .coverimage{
-    width:300px;
-    aspect-ratio: 4/1;
+    width:100%;
+    aspect-ratio: 3/1;
   }
   .landing{
     display:flex;

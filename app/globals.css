@@ -88,6 +88,11 @@ a{
     width:50%;
     aspect-ratio: 4/1;
   }
+  .landing{
+    display:flex;
+    height: auto;
+    width:auto;
+  }
 }
 .dropdown{
   background:azure;

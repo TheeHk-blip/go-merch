@@ -84,8 +84,8 @@ a{
   p.fashion{
     display:none;
   }
-  .landing{
-    display: flex;
+  .coverimage{
+    width:50%;
   }
 }
 .dropdown{

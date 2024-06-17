@@ -10,7 +10,7 @@ export default function App(){
         <Navbar style={{ boxShadow: "0px 0px 4px black" }} isBlurred={false}>
             <NavbarContent>
                 <NavbarBrand style={{ marginBottom: "1px" }}>
-                    <GoMerch />Fashion Creates Confidence
+                    <GoMerch /><p className='fashion'>Fashion Creates Confidence</p>
                 </NavbarBrand>
             </NavbarContent>
             <Button href="/store" as={Link} color='secondary' size='sm' variant='ghost'>Store</Button>
@@ -24,11 +24,11 @@ export default function App(){
                     <h1 className="text-center" >TABLE OF CONTENTS</h1>
                     <ol>
                         <li>INRODUCTION</li>
-                        <li>1.SUSTAINABLE FASHION
+                        <li>1.SUSTAINABLE FASHION</li>
                             <li>a. Organic and Recycled Materials</li>
                             <li>b. Circular Fashion</li>
                             <li>c. Transparent Supply Chains</li>
-                        </li>
+                        
                         <li>2.TECH INFUSED FASHION</li>
                             <li>a. Wearable Technology</li>
                             <li>b. Augmented Reality Shopping</li>

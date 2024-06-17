@@ -85,7 +85,7 @@ a{
     display:none;
   }
   .coverimage{
-    width:50%;
+    width:300px;
     aspect-ratio: 4/1;
   }
   .landing{

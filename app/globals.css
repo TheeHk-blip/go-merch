@@ -93,6 +93,9 @@ a{
     height: auto;
     width:auto;
   }
+  .table{
+    display:none;
+  }
 }
 .dropdown{
   background:azure;

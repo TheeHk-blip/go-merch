@@ -84,14 +84,10 @@ a{
   p.fashion{
     display:none;
   }
-  .coverimage{
-    width:100%;
-    aspect-ratio: 3/1;
-  }
   .landing{
-    display:flex;
-    height: auto;
-    width:auto;
+    display: block;
+    height:auto;
+    width:100%;
   }
   .table{
     display:none;

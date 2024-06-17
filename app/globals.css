@@ -86,6 +86,7 @@ a{
   }
   .coverimage{
     width:50%;
+    aspect-ratio: 4/1;
   }
 }
 .dropdown{

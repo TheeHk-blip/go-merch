@@ -39,9 +39,9 @@ export default function App(){
                         <li>CONCLUSION</li>
                     </ol>
                 </div>
-            </div>
-            <div>
-                <h1><strong>Introduction: The Future of Fashion</strong></h1>
+            </div><br/><br/><br/>
+            <div className='content'>
+                <h1 className='text-xl'><strong>Introduction: The Future of Fashion</strong></h1>
                 <p>Fashion is a dynamic and ever-evolving industry, with each year bringing new trends and styles. As we step into 2024, the fashion world is witnessing an exciting blend of technology, sustainability, and innovation. From eco-friendly fabrics to futuristic designs, this year&apos;s trends reflect a shift towards conscious consumption and technological integration. In this blog post, we&apos;ll explore five key trends that are defining the fashion landscape in 2024.</p><br/>
                 <h2><em>1. Sustainable Fashion: Eco-Friendly Fabrics and Ethical Practices.</em></h2>
                 <p>Sustainability continues to be a dominant theme in 2024, with designers and consumers alike prioritizing eco-friendly materials and ethical practices. Here are some of the standout trends in sustainable fashion:</p>

@@ -84,11 +84,6 @@ a{
   p.fashion{
     display:none;
   }
-  .landing{
-    display: block;
-    height:auto;
-    width:100%;
-  }
   .table{
     display:none;
   }
@@ -108,6 +103,7 @@ a{
   object-fit: cover;
 }
 .coverimage{
+  float: left;
   border-radius: .7rem;
   width:70%;
 }
@@ -122,6 +118,11 @@ a{
   aspect-ratio: 4/1;
   margin: 2px;
   width: 100%;
-  height: auto;
-  display:flex;
+  height:max-content;
+}
+.content{
+  float:left;
+}
+.text-xl{
+  font-size: xx-large;
 }
